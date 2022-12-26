@@ -1,0 +1,50 @@
+{% extends "subbase.html" %}
+{% block title %}nol Prices{% endblock %}
+
+{% block content %}
+<nav>
+    <a href="/">Home</a>
+    <a href="/nol">nol Cards</a>
+</nav>
+<h1>nol Prices</h1>
+<p>nol card prices differ in two different ways: initial cost and price per zone. The gold card, for example, is the same 
+initial cost as the silver card, however the price per zone is doubled to account for gold class. 
+The costs for each card can be tabulated as follows:</p>
+<table class="mt-5">
+    <tr>
+        <th>Card Type</th>
+        <th>Red ticket</th>
+        <th>Silver card</th>
+        <th>Gold card</th>
+        <th>Personal card</th>
+    </tr>
+    <tr>
+        <th>Purchasing price</th>
+        <td>2 AED</td>
+        <td>25 AED</td>
+        <td>25 AED</td>
+        <td>70 AED</td>
+    </tr>
+    <tr>
+        <th>Cost for 1 zone</th>
+        <td>4 AED</td>
+        <td>3 AED</td>
+        <td>6 AED</td>
+        <td>3 AED</td>
+    </tr>
+    <tr>
+        <th>Cost for 2 zones</th>
+        <td>6 AED</td>
+        <td>5 AED</td>
+        <td>10 AED</td>
+        <td>5 AED</td>
+    </tr>
+    <tr>
+        <th>Cost for over 2 zones</th>
+        <td>8.5 AED</td>
+        <td>7.5 AED</td>
+        <td>15 AED</td>
+        <td>7.5 AED</td>
+    </tr>
+</table>
+{% endblock %}

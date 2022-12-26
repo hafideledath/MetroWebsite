@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #4464bd;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #ffdede;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    text-align: center;
+    margin: calc(var(--margin) - 40px) 100px calc(var(--margin) - 70px) 10px;
+}
+
+nav a {
+    color: #ffdede;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-right: 40px;
+    display: block;
+    opacity: 0.8;
+    transition-duration: 0.2s;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+nav a:first-of-type {
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+a:link,
+a:visited {
+  transition-duration: 0.5s;
+  display: inline-block;
+  position: relative;
+  color: #ffdede;
+  text-decoration: none;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 8vh 0 30px;
+}
+
+p {
+    max-width: 45vw;
+    min-width: 250px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+@keyframes fadeInLeft {
+    from {
+       opacity: 0;
+       transform: translateX(-100%) scale(0.9) rotateZ(-5deg);
+    }
+    to {
+       opacity: 1;
+       transform: translateX(0) scale(1) rotateZ(0deg);
+    }
+}
+
+img {
+    height: 30vh;
+    margin-top: 40px;
+    animation: fadeInLeft 1.5s;
+}
+
+.hover {
+    transition-duration: 0.5s;
+    box-shadow: 4px 4px #00000066;
+    border-radius: 15px;
+}
